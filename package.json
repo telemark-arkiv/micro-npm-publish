@@ -1,0 +1,58 @@
+{
+  "name": "micro-npm-publish",
+  "description": "publish to npm when there is a release on GitHub",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=7.9.0"
+  },
+  "scripts": {
+    "test": "standard && nsp check && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "setup": "npm install",
+    "standard-fix": "standard --fix",
+    "start": "micro",
+    "now-deploy": "npm test && now --npm -E tfk.env && now alias"
+  },
+  "keywords": [
+    "microservice",
+    "micro",
+    "github"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telemark/micro-npm-publish.git"
+  },
+  "bugs": {
+    "url": "https://github.com/telemark/micro-npm-publish/issues"
+  },
+  "homepage": "https://github.com/telemark/micro-npm-publish",
+  "now": {
+    "alias": [
+      "npm.publish.github.t-fk.win"
+    ],
+    "type": "npm"
+  },
+  "devDependencies": {
+    "ava": "0.19.1",
+    "coveralls": "2.13.0",
+    "nsp": "2.6.3",
+    "nyc": "10.2.0",
+    "standard": "10.0.2",
+    "test-listen": "1.0.2"
+  },
+  "dependencies": {
+    "axios": "0.16.1",
+    "marked": "0.3.6",
+    "micro": "7.3.2"
+  }
+}
