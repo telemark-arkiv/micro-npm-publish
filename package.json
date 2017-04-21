@@ -39,7 +39,7 @@
   "homepage": "https://github.com/telemark/micro-npm-publish",
   "now": {
     "alias": [
-      "npm.publish.github.t-fk.win"
+      "npm.publish.micro.t-fk.no"
     ],
     "type": "npm"
   },
