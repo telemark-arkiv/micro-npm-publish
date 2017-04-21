@@ -13,6 +13,9 @@ WORKDIR "/src"
 # Install dependencies
 RUN npm install --production
 
+# Build
+RUN npm run build
+
 # Expose 3000
 EXPOSE 3000
 

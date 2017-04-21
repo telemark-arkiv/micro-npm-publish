@@ -14,6 +14,7 @@
     "node": ">=7.9.0"
   },
   "scripts": {
+    "build": "node lib/generate-npmrc.js",
     "test": "standard && nsp check && ava",
     "test-offline": "standard && ava",
     "coverage": "nyc ava",
