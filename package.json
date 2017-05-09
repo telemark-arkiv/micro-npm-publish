@@ -1,7 +1,7 @@
 {
   "name": "micro-npm-publish",
   "description": "publish to npm when there is a release on GitHub",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "private": true,
   "author": {
@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=7.9.0"
+    "node": ">=7.10.0"
   },
   "scripts": {
     "build": "node lib/generate-npmrc.js",
@@ -27,7 +27,8 @@
   "keywords": [
     "microservice",
     "micro",
-    "github"
+    "github",
+    "npm"
   ],
   "repository": {
     "type": "git",
@@ -39,7 +40,7 @@
   "homepage": "https://github.com/telemark/micro-npm-publish",
   "now": {
     "alias": [
-      "npm.publish.micro.t-fk.no"
+      "npm.publish.micro.tjeneste.win"
     ],
     "type": "npm"
   },
