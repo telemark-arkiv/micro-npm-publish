@@ -1,7 +1,7 @@
 {
   "name": "micro-npm-publish",
   "description": "publish to npm when there is a release on GitHub",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "license": "MIT",
   "private": true,
   "author": {
